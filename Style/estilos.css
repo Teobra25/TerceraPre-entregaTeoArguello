@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2? family= Alkatra & family= Bruno+Ace+SC & family= Montserrat:wght@100 & family= Roboto:wght@300 & display= intercambio');
+/* font-family: 'Alkatra', cursive;
+font-family: 'Bruno Ace SC', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    color: aqua !important;
+    font-size: 40px;
+}
+.navbar-brand span{
+    color: white;
+}
+.navbar-brand span:hover{
+    color: aqua !important;
+}
+.navbar-brand:hover{
+    color: white !important;
+}
+.navbar-nav{
+    font-size: 20px;
+    padding-left: 20px !important; 
+}
+.navbar-nav a:hover{
+    transform: scale(1.15);
+    transition: 0.8s;
+    color: aqua !important;
+}
+.galery{
+    width: 100%;
+    height: 780px;
+    color: white;
+    text-align: start;
+    font-size: 20px;
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,250px);
+}
+.item{
+    height: 250px;
+    border: 2px solid rgb(4, 0, 0);
+    background-color: bisque;
+    background-position: center;
+    background-size: cover;
+    filter: sepia(100%);
+}
+.item:hover{
+    filter: sepia(0%);
+    transition: 1.2s;
+}
+.item1{
+    background-image: url(/Multimedia/barcelona-2023-cerundolo-mierc\ \(1\).jpg);
+    grid-row: 1/5;
+    grid-column: 1/4;
+    height: 750px;
+}
+.item2{
+    background-image: url(/Multimedia/Baez_RG22_\(6\)_\(52144105338\).jpg);
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-position: top;
+}
+.item3{
+    background-image:  url(/Multimedia/schwartzman.jpg);
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background-position: top;
+}
+.item4{
+    background-image:  url(/Multimedia/etcheverry.jpg);
+    grid-row: 3/4;
+    grid-column: 3/4;
+    background-position: top;
+}
+
+.us{
+    width: 100%;
+    height: auto;
+    background-color: springgreen;
+}
+.nleft{
+    height: 350px;
+    width: 100%;
+    background-image: url(/Multimedia/tennis-5782695_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nright{
+    height: auto;
+    width: 100%;
+    background-color: springgreen;
+    padding: 20px;
+}
+.nright h3{
+    font-size:27px;
+    font-family: 'Bruno Ace SC', cursive;
+    margin-bottom: 20px ;
+}
+.nright p{
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bottom{
+    background-color: black;
+    padding: 10px 20px;
+    color: aqua;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.bottom:hover{
+    background-color: aqua;
+    text-shadow: 0 0 5px black;
+    color: black;
+    transition: all 1.5s;
+}
+footer{
+    text-align: center;
+    font-size: 35px;
+    background-color: #000;
+    color: white;
+    padding: 40PX;
+}
+footer p{
+    margin-bottom: 20px;
+}
+.red a{
+    color: blueviolet;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+.up{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 50px; 
+    bottom: 50px; 
+    background-color: orange;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    border: solid 2px black;
+}
+.up:hover{
+    background-color: blueviolet;
+}
+@media only screen and (max-width: 768px){
+    .galery{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 200px);
+        display: block;
+    }
+    .item{
+        height:200px ;
+    }
+}
+@media only screen and (min-width: 768px ){
+    .us{
+        display: flex;
+        }
+    .nleft{
+        width: 50%;
+        }
+    .nright{
+        width: 50%;
+        }
+    }
+
+    /* --------------------RANKING------------------------------ */
+
+    .titleRank{
+        color: aqua;
+        font-size: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+    .footerRank{
+        padding: 30px;
+    }
+    #videoRank{
+        display: grid;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 120px 120px 120px;
+        grid-gap: 20px 50px;
+        grid-template-areas: 
+        "nav header "
+        "publicity products"
+        "footer service";
+        background-size: auto !important;
+        
+        
+    }
+    .borderRank{
+        border: 4px solid black;
+        border-radius: 10px;
+    }
+    #video1{
+        grid-area: header;
+        background-image: url(/Multimedia/minibaez.jpg);
+        background-position: top;
+    }
+    #video2{
+        grid-area: footer;
+        background-image: url(/Multimedia/minifran.jpg);
+        background-position: center;
+    }
+    #video3{
+        grid-area: nav;
+        background-image: url(/Multimedia/minifran.jpg);
+        background-position: center;
+    }
+    a#video4{
+        grid-area: publicity;
+        background-image: url(/Multimedia/minischwartzman.jpg);
+        background-position: center;
+    }
+    #video5{
+        grid-area: products;
+        background-image: url(/Multimedia/minietcheverry.jpg);
+    
+    }
+    #video6{
+        grid-area: service;
+        background-image: url(/Multimedia/minibaez.jpg);
+    }
+    .footerRes{
+        padding: 30px;
+    }
+
+
+
